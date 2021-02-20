@@ -3,6 +3,7 @@ import Image from "next/image";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
+import HomeButton from "../components/HomeButton";
 import styles from "../styles/About.module.css";
 
 const useStyles = makeStyles({
@@ -26,6 +27,7 @@ export default function About() {
 
   return (
     <div className={`page ${styles.about}`}>
+      <HomeButton />
       <Image
         className={styles.profpic}
         src="/images/profpic.jpeg"
