@@ -1,0 +1,9 @@
+.weatherCard {
+  padding: 1rem;
+  min-width: 100%;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

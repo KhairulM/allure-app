@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Head from "next/head";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
@@ -27,6 +28,9 @@ export default function About() {
 
   return (
     <div className={`page ${styles.about}`}>
+      <Head>
+        <title>M. Khairul Makirin</title>
+      </Head>
       <HomeButton />
       <Image
         className={styles.profpic}
