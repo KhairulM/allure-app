@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import { getCountryName } from "../constants/country-code";
@@ -23,6 +24,15 @@ export default function WeatherCard({ data }) {
           {data.name}
         </Typography>
         <p>{getCountryName(data.sys.country)}</p>
+      </div>
+      <div className={styles.iconContainer}>
+        <Image
+          src={`http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`}
+          width={100}
+          height={100}
+          alt={data.weather[0].description}
+        />
+        <p>{data.weather[0].description}</p>
       </div>
     </div>
   );
